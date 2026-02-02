@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang = "en_GB">
+    <head>
+    <meta name = " viewport" content = "width=device-width, initial-scale = 1">
+     <link href = "https://fonts.googleapis.com/css?family = Galada" rel = 'stylesheet'>
+     <title> Transitive Health </title>
+     <style type="text/css">
+        .container {
+            position: relative;
+            width: 100%;
+            max-width: 400px;
+        }
+
+        .container img {
+            width: 100%;
+            height: auto;
+        }
+
+        .container .btn {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            background-color: green;
+            color: purple;
+            font-size: 16px;
+            padding: 12px 24px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        .container .btn:hover {
+            background-color: black;
+        }
+        body {
+            margin: 0;
+            font-family: Galada, trebuchet MS, sans-serif;
+            background-color: white;
+        }
+
+        .topnav {
+            overflow: hidden;
+            background-color: indigo;
+        }
+
+        .topnav a {
+            float: left;
+            color: ivory;
+            text-align: center;
+            padding: 16px 18px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+
+        .topnav a:hover {
+            background-color: whitesmoke;
+            color: forestgreen;
+        }
+
+        .topnav a.active {
+            background-color: lavenderblush;
+            color: indigo;
+        }
+
+        .topnav input[type=text] {
+            float: right;
+            padding: 8px;
+            margin-top: 8px;
+            margin-right: 145px;
+            width: 500px;
+            border: none;
+            font-size: 17px;
+            }
+
+        h1 {
+            font-size : 300%;
+            color: forestgreen;
+            }
+        
+        p{
+            font-size : 125%;
+            color: forestgreen;
+            background-color: rgb(238, 238, 249);
+            }
+        
+        h2 {
+            font-size : 200%;
+            color: forestgreen;
+            }
+
+        h3 {
+            font-size : 200%;
+            color: forestgreen;
+            }
+
+        textarea {
+            background-color: white;
+        }
+        ul {
+            list-style-type: decimal-leading-zero;
+            width: 200px;
+            height: 150px
+        }
+        li {
+            margin: 10px 0px 0px 0px
+        }
+        </style>
+      </head>
+      <body>
+
+        <h1> <img src="Images/AdobeStock_80099127.jpeg" alt="Blueberries" title="Back to basics" width="200" height="150" align="middle" /> For Healthy Minds and Bodies </h1>
+
+        <div class="topnav">
+            <a href="index.html">Home</a>
+            <a href="#news">News</a>
+            <a href="#consulation">Consultation</a>
+            <a class="active" href="exercises.html">Exercises</a>
+            <a href="contact.html">Contacts</a>
+            <a href="about.html">About</a>
+            <input type="text" placeholder="Search what you have in mind...">
+            </div>
+
+            <p> A place where health driven people meet and share their tips and advice for a healthier tomorrow. </p>
+
+            <br />
+
+            <h2> Creating a exercise routine </h2>
+
+            <br />
+
+            <img src="Images/AdobeStock_1855554799.png" alt="exercises" title="training" width="520" height="270" align="middle">
+
+            <br />
+
+            <p> To maintain a good physical health, regular exercise is essential as it helps improve mobility, deal with stress and heal from common injuries. </p>
+            <p> However, it is important to create a balanced routine that suits your own needs and capabilities, furthermore something that you really enjoy and does not feel like a chore.</p>
+
+            <h3> Casuals Exercises</h3>
+            
+            <p> List of casual exercises for beginners and those looking for essential activities.</p>
+
+            <ul>
+                <li> Walking </li>
+                <li> Jogging </li>
+                <li> Stretching </li>
+                <li> Push-ups </li>
+                <li> Sit-ups</li>
+            </ul>
+
+            <h3> Stretching Exercises </h3>
+
+            <iframe width="420" height="345" src="https://youtu.be/FI51zRzgIe4">
+            </iframe>
+
+            <button type="button"
+            onclick="document.getElementById('c_account').innerHTML = 'To make a post you would need to have account first'">
+            Posting a comment or advice </button>
+
+            <p id="c_account"> </p>
+
+        <h2> Posting a advice or tips on anything that sounds beneficial </h2>
+
+        <form action="/action_page.php">
+        <textarea id="review" name="review" rows="10" cols="90"> </textarea> <img src="Images/jump-rope-10027666_1280.png" alt="ropeman", width="200" height="250" align="middle" >
+        <input type="submit" value="Post">
+        </form> 
+
+
+
+    </body>
+</html>
+
+
