@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang = "en_GB">
+    <head>
+    <meta name = " viewport" content = "width=device-width, initial-scale = 1">
+     <link href = "https://fonts.googleapis.com/css?family = Galada" rel = 'stylesheet'>
+     <title> Transitive Health </title>
+     <link href="css/style.css" rel="stylesheet">
+    </head>
+      <body>
+
+        <h1> <img src="Images/AdobeStock_80099127.jpeg" alt="Blueberries" title="Back to basics" width="200" height="150" align="middle" /> For Healthy Minds and Bodies </h1>
+
+        <div class="topnav">
+            <a class="active" href="index.php">Home</a>
+            <a href="#news">News</a>
+            <a href="#consulation">Consultation</a>
+            <a href="exercises.html">Exercises</a>
+            <a href="contact.html">Contacts</a>
+            <a href="about.html">About</a>
+            <div class="search-container">
+                <form action="/action_page.php">
+                  <input type="text" placeholder="Search what you have in mind..." name="search">
+                  <button type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+
+        <div style="padding-left:16px">
+        
+        <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+
+            <div id="id01" class="modal">
+                <form class="modal-content animate" action="/action_page.php" method="post">
+                    <div class="imgcontainer">
+                        <span onclick="document.getElementById('id01').style.display='none'"
+                        class="close" title="Close Modal">&times;</span>
+                        <img src="Images/avatar-1577909_1280.png" alt="'Avatar" class="avatar">
+                     </div>
+
+            <div class="container">
+                <label for="uname"> <b>Username</b></label>
+                <input type="text" placeholder="Enter Username" name="uname" required>
+                
+                <label for="psw"> <b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" required>
+
+                <button type="submit">Login</button>
+                <label>
+                    <input type="checkbox" checked="checked" name="remember"> Remember me
+                </label>
+            </div>
+
+                <div class="container" style="background-color:white">
+                <button type="button" onclick="document.getElementById('id01').style.display='none'"
+                class="cancelbtn">Cancel</button>
+                      <span class="psw"> Forgot <a href="#"> password?</a></span>
+                  </div>
+                </form>
+            </div>
+
+        <script>
+            var modal = document.getElementById('id01');
+            
+            /*Once the user clicks anywhere outside of the modal, the login option is closed*/
+            window.onclick = function(event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            }
+        </script>
+
+        <a href="registration_form.php">
+            <button>Register</button>
+        </a>
+
+        <p> A place where health driven people meet and share their tips and advice for a healthier tomorrow. </p>
+
+        <br />
+
+        <div class="about-section">
+        <h1>About Us Page</h1>
+        <p>Mission: Helps people get answers to systematic health issues by connecting them to like minded people</p>
+        <p>Everyone's experience and solution get us a step closer to a cure.</p>
+        </div>
+
+        <div class="row">
+        <div class="column">
+            <div class="card">
+            <img src="Images/IMG-20220717-WA0018.jpg" alt="Sidikiba" style="width:100%">
+            <div class="container">
+                <h2>Sidikiba Diane</h2>
+                <p class="title">CEO & Founder</p>
+                <p>Always happy to connect people</p>
+                <p>sidikiba.diane01@law.ac.uk</p>
+                <p><button class="button">Contact</button></p>
+            </div>
+            </div>
+        </div>
+
+
+
+    </body>
+</html>
+
+

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang = "en_GB">
+    <head>
+    <meta name = " viewport" content = "width=device-width, initial-scale = 1">
+     <link href = "https://fonts.googleapis.com/css?family = Galada" rel = 'stylesheet'>
+     <title> Transitive Health </title>
+     <link href="css/style.css" rel="stylesheet">
+    </head>
+      <body>
+
+        <h1> <img src="Images/AdobeStock_80099127.jpeg" alt="Blueberries" title="Back to basics" width="200" height="150" align="middle" /> For Healthy Minds and Bodies </h1>
+
+        <div class="topnav">
+            <a class="active" href="index.php">Home</a>
+            <a href="#news">News</a>
+            <a href="#consulation">Consultation</a>
+            <a href="exercises.html">Exercises</a>
+            <a href="contact.html">Contacts</a>
+            <a href="about.html">About</a>
+            <div class="search-container">
+                <form action="/action_page.php">
+                  <input type="text" placeholder="Search what you have in mind..." name="search">
+                  <button type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+
+        <div style="padding-left:16px">
+        
+        <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+
+            <div id="id01" class="modal">
+                <form class="modal-content animate" action="/action_page.php" method="post">
+                    <div class="imgcontainer">
+                        <span onclick="document.getElementById('id01').style.display='none'"
+                        class="close" title="Close Modal">&times;</span>
+                        <img src="Images/avatar-1577909_1280.png" alt="'Avatar" class="avatar">
+                     </div>
+
+            <div class="container">
+                <label for="uname"> <b>Username</b></label>
+                <input type="text" placeholder="Enter Username" name="uname" required>
+                
+                <label for="psw"> <b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" required>
+
+                <button type="submit">Login</button>
+                <label>
+                    <input type="checkbox" checked="checked" name="remember"> Remember me
+                </label>
+            </div>
+
+                <div class="container" style="background-color:white">
+                <button type="button" onclick="document.getElementById('id01').style.display='none'"
+                class="cancelbtn">Cancel</button>
+                      <span class="psw"> Forgot <a href="#"> password?</a></span>
+                  </div>
+                </form>
+            </div>
+
+        <script>
+            var modal = document.getElementById('id01');
+            
+            /*Once the user clicks anywhere outside of the modal, the login option is closed*/
+            window.onclick = function(event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            }
+        </script>
+
+        <a href="registration_form.php">
+            <button>Register</button>
+        </a>
+
+        <p> A place where health driven people meet and share their tips and advice for a healthier tomorrow. </p>
+
+        <br />
+
+        <form method="post" action="includes/contacthandler.inc.php"> <img src="Images/AdobeStock_1866893046.png" alt="heart_beat" title="Back to basics" width="1100" height="600" align="right" />
+            <br> <br>
+            First name: <input type="text" name= "first_name"><br>
+            Last name: <input type="text" name= "last_name"><br>
+            Username: <input type="text" name= "username"><br>
+            E-mail: <input type="text" name="email"><br>
+            Topic: <input type="text" name="topic"><br>
+            Concern / Issue: <textarea name="enquiry" rows="10" cols="75"></textarea>
+            <br> <br>
+            <input type="submit" name="submit" value="Submit">
+        </form>
+
+
+
+    </body>
+</html>
+
+

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en_GB">
+  <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Galada' rel='stylesheet'>
+    <title> Organic Products Reviews | Home Page </title>
+    <style type="text/css">
+      .container {
+        position: relative;
+        width: 100%;
+        max-width: 400px;
+      }
+
+      .container img {
+        width: 100%;
+        height: auto;
+      }
+
+      .container .btn {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        background-color: #555;
+        color: white;
+        font-size: 16px;
+        padding: 12px 24px;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+        text-align: center;
+      }
+
+      .container .btn:hover {
+        background-color: black;
+      }
+      body {
+        margin: 0;
+        font-family: Galada, Trebuchet MS, sans-serif;
+        background-color: rgb(35, 1, 48);
+      }
+
+      .topnav {
+        overflow: hidden;
+        background-color: indigo;
+      }
+
+      .topnav a {
+        float: left;
+        color: orange;
+        text-align: center;
+        padding: 16px 18px;
+        text-decoration: none;
+        font-size: 17px;
+      }
+
+      .topnav a:hover {
+        background-color: darkred;
+        color: ivory;
+      }
+
+      .topnav a.active {
+        background-color: royalblue;
+        color: ivory;
+      }
+
+      .topnav input[type=text] {
+        float: right;
+        padding: 8px;
+        margin-top: 8px;
+        margin-right: 145px;
+        width: 500px;
+        border: none;
+        font-size: 17px;
+        }
+      
+      h1 {
+        font-size : 300%;
+        color: rgb(200, 122, 5);}
+      p{
+        font-size : 125%;
+        color: ivory;
+        background-color: rgb(122, 6, 6);}
+      h2 {
+        font-size : 200%;
+        color: rgb(200, 122, 5);}
+      h3 {
+        font-size : 200%;
+        color: rgb(200, 122, 5);}
+      textarea {
+        background-color: antiquewhite;}
+      </style>
+  </head>
+  <body>
+   <h1> <img src="C:\Users\sidik\OneDrive\Desktop\Web Dev\woman-7113352_1280.jpg" alt="African_woman" title="Back to basics" width="150" height="150" align="middle" /> The People's Organic Product Reviews </h1>
+
+    <div class="topnav">
+    <a class="active" href="#home">Home</a>
+    <a href="#news">News</a>
+    <a href="#contact">Contact</a>
+    <a href="#about">About</a>
+    <input type="text" placeholder="Search..">
+    </div>
+
+    <p> Where you can found all types of products across the <strong>world</strong> to meet your needs. <br /> Information regarding the quality of products sold throughout the globe and recommendation on products based on studies and people's experiences.</p>
+    
+    <button type="'button"
+    onclick="document.getElementById('demo').innerHTML = Date()">
+    Create an account</button>
+
+    <p id="demo"> </p>
+
+    <div style="padding-left:16px">
+    </div>
+    
+    <h2> <img src="C:\Users\sidik\OneDrive\Desktop\Web Dev\folder-146153_1280.png" alt="body_lotion" title="Lotion to basics" width="50" height="50" align="middle" /> Categories </h2>
+
+    <div class="container">
+      <img src="C:\Users\sidik\OneDrive\Desktop\Web Dev\watermelon-8368960_1280.png" alt="food" style="width:100%" align="middle">
+      <button class="btn">Food</button>
+    </div>
+
+    <div class="container">
+      <img src="C:\Users\sidik\OneDrive\Desktop\Web Dev\lotion-5153989_1280.png" alt="lotion" style="width:100%" align="middle">
+      <button class="btn">Skincare Products</button>
+    </div>
+
+    <h3> <img src="C:\Users\sidik\OneDrive\Desktop\Web Dev\cosmetics-7713224_1280.png" alt="body_lotion" title="Lotion to basics" width="50" height="50" align="middle" /> Popular Products and Recent Reviews </h3>
+    <form action="/action_page.php">
+    <textarea id="review" name="review" rows="10" cols="100"> </textarea>
+    <br />
+    <input type="submit" value="Submit">
+    </form>
+
+
+    
+  </body>
+</html>
+
